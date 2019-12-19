@@ -29,6 +29,8 @@ public class Practica extends javax.swing.JFrame {
 
         btnActivar = new javax.swing.JButton();
         lblMensaje = new javax.swing.JLabel();
+        lblMensaje1 = new javax.swing.JLabel();
+        lblMensaje2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -41,6 +43,10 @@ public class Practica extends javax.swing.JFrame {
 
         lblMensaje.setText("jLabel1");
 
+        lblMensaje1.setText("jLabel1");
+
+        lblMensaje2.setText("jLabel1");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -52,7 +58,10 @@ public class Practica extends javax.swing.JFrame {
                         .addComponent(btnActivar))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(164, 164, 164)
-                        .addComponent(lblMensaje)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblMensaje1)
+                            .addComponent(lblMensaje)
+                            .addComponent(lblMensaje2))))
                 .addContainerGap(183, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -62,7 +71,11 @@ public class Practica extends javax.swing.JFrame {
                 .addComponent(btnActivar)
                 .addGap(34, 34, 34)
                 .addComponent(lblMensaje)
-                .addContainerGap(151, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblMensaje1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblMensaje2)
+                .addContainerGap(111, Short.MAX_VALUE))
         );
 
         pack();
@@ -70,7 +83,8 @@ public class Practica extends javax.swing.JFrame {
 
     private void btnActivarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnActivarActionPerformed
 lblMensaje.setText("Holaa"); 
-lblMensaje1.setText("Como vas");        // TODO add your handling code here:
+lblMensaje1.setText("Como vas");
+lblMensaje2.setText("adios");// TODO add your handling code here:
     }//GEN-LAST:event_btnActivarActionPerformed
 
     /**
@@ -111,5 +125,7 @@ lblMensaje1.setText("Como vas");        // TODO add your handling code here:
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnActivar;
     private javax.swing.JLabel lblMensaje;
+    private javax.swing.JLabel lblMensaje1;
+    private javax.swing.JLabel lblMensaje2;
     // End of variables declaration//GEN-END:variables
 }
