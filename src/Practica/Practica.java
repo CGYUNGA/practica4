@@ -84,7 +84,9 @@ public class Practica extends javax.swing.JFrame {
     private void btnActivarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnActivarActionPerformed
 lblMensaje.setText("Holaa"); 
 lblMensaje1.setText("Como vas");
-lblMensaje2.setText("adios");// TODO add your handling code here:
+lblMensaje2.setText("adios");
+        lblMensaje3.setText("Gracias por invitar");
+        // TODO add your handling code here:
     }//GEN-LAST:event_btnActivarActionPerformed
 
     /**
